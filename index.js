@@ -1,17 +1,16 @@
-console.log(undefined); 
-console.log(null);
+/*
+починається з літери,цифри, або _ або $ (дефіс не можна)
+// імя змінної не містить пробілів         регістрозалежне (Name name NAME  - три різні змінні)
 
-/*boolean*/
-console.log(true);
-console.log(false);
+// відовідає на питання що в ній
+// */
 
-/*string*/
-console.log('true');
-console.log("false");
-console.log("I'm a teacher");
+// //console.log(userName)//
 
-console.log(65654556);
-console.log(256.3265);
-console.log(-Infinity);
-console.log(NaN);
-console.log(1n);
+var userName; //оголошення змінної
+userName = 'Brad'; //ініціалізація змінної
+
+let userSname = 'Pett';
+userSname = 'Pitt'; //оголосили змінну і проініціалізували її
+
+console.log(userName, userSname)
