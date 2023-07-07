@@ -1,16 +1,29 @@
-/*
-починається з літери,цифри, або _ або $ (дефіс не можна)
-// імя змінної не містить пробілів         регістрозалежне (Name name NAME  - три різні змінні)
+const userInput = prompt('Enter number', 5);
 
-// відовідає на питання що в ній
-// */
+console.log(userInput, typeof userInput);
+console.log(Number(userInput));
 
-// //console.log(userName)//
+if(userInput==='') ||userInput === null || Number.isNan(Number(userInput))) {
 
-var userName; //оголошення змінної
-userName = 'Brad'; //ініціалізація змінної
+}else{
+  console.log('error!')
+}console.log('done!')
 
-let userSname = 'Pett';
-userSname = 'Pitt'; //оголосили змінну і проініціалізували її
 
-console.log(userName, userSname)
+
+
+
+
+
+function myFirstFunction(){
+  console.log('myFirstFunction');
+}
+
+myFirstFunction()
+
+const mySecondFunction = function (){
+  console.log('mySecondFunction');
+}
+
+mySecondFunction();
+console.log(mySecondFunction)
