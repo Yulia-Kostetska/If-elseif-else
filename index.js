@@ -15,3 +15,13 @@ if ( num1 === num2 ) {
   result = NaN; //якщо обидва нулі - то покласти в результат NaN і вивести результат
 }
 console.log(result);
+
+
+
+
+const a = 32;
+if (( a > 0 ) && (a % 2 === 0) && (a % 4 === 0) && (a % 7 === 0)){
+  console.log("lose")
+} else {
+  console.log("win")
+}
