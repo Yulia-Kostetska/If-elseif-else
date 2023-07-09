@@ -1,29 +1,17 @@
-const userInput = prompt('Enter number', 5);
+//task_1
+const num1 = 4;
+const num2 = 7;
+let result;
 
-console.log(userInput, typeof userInput);
-console.log(Number(userInput));
-
-if(userInput==='') ||userInput === null || Number.isNan(Number(userInput))) {
-
-}else{
-  console.log('error!')
-}console.log('done!')
-
-
-
-
-
-
-
-function myFirstFunction(){
-  console.log('myFirstFunction');
+if ( num1 === num2 ) {
+  result = num1 * num2; //Є дві змінні, якщо вони з однаковим знаком - то перемножити і вивести результат
+} else if (num1 === 0 ){
+  result = num2; //якщо одне зі значень 0 - то покласти в результат значення іншої змінної і вивести результат
+} else if (num2 === 0 ){
+  result = num1; //якщо одне зі значень 0 - то покласти в результат значення іншої змінної і вивести результат
+} else if (num1 !== num2 ) {
+  result = num1 / num2; //якщо з різними знаками - то поділити і вивести результат
+} else if (num1 === NaN && num2 === Nan){
+  result = NaN; //якщо обидва нулі - то покласти в результат NaN і вивести результат
 }
-
-myFirstFunction()
-
-const mySecondFunction = function (){
-  console.log('mySecondFunction');
-}
-
-mySecondFunction();
-console.log(mySecondFunction)
+console.log(result);
